@@ -2,9 +2,12 @@ A function that uses command line arguments. This function will print two variab
   
 #!/usr/bin/env python3
 
+#importing the sys module in script
 import sys
 
-def command_line_arguments():
+#defining the command line argument in which we have two main variables which are further defined. Apart from these variables, we have four print statements
+#which are printing the value of those variables. 
+def cmd_args():
         name = str()
         section = str()
       
@@ -17,4 +20,4 @@ def command_line_arguments():
         print("Script and variables are : ", sys.argv[0], name, section)
         
    if __name__ == "__main__":
-     command_line_arguments()
+     cmd_args()
